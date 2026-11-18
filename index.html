@@ -1,1 +1,55 @@
 HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI PANEL RED</title>
+<style>
+body {
+  background:#090909;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+  padding:30px;
+}
+.panel {
+  background:#1b1b1b;
+  border:1px solid red;
+  border-radius:15px;
+  padding:25px;
+  max-width:350px;
+  margin:50px auto;
+}
+h1 {color:red;}
+input,button {
+  padding:12px;
+  margin:8px;
+  border-radius:8px;
+}
+button {
+  background:red;
+  color:white;
+  border:0;
+}
+</style>
+</head>
+<body>
+<div class="panel">
+<h1>AI PANEL RED</h1>
+<p>Welcome to AI Panel</p>
+<input id="key" placeholder="Enter Access Key">
+<br>
+<button onclick="login()">LOGIN</button>
+<p id="msg"></p>
+</div>
+<script>
+function login() {
+ const key=document.getElementById("key").value;
+ document.getElementById("msg").innerText =
+ key==="RED123" ? "Login Successful!" : "Invalid Key!";
+}
+</script>
+</body>
+</html>
